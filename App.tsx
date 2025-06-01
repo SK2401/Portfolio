@@ -1,13 +1,13 @@
 
 import React from 'react';
-import Header from './components/Header'; 
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import ServicesSection from './components/ServicesSection';
-import ImpactSection from './components/ImpactSection';
-import ToolsSection from './components/ToolsSection';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer'; // Added Footer import
+import Header from './components/Header.tsx'; 
+import HeroSection from './components/HeroSection.tsx';
+import AboutSection from './components/AboutSection.tsx';
+import ServicesSection from './components/ServicesSection.tsx';
+import ImpactSection from './components/ImpactSection.tsx';
+import ToolsSection from './components/ToolsSection.tsx';
+import ContactSection from './components/ContactSection.tsx';
+import Footer from './components/Footer.tsx'; // Added Footer import
 
 const App: React.FC = () => {
   return (
