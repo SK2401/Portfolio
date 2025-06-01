@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shounak Kshirsagar - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script> <!-- Added typography plugin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              primary: '#3B82F6', // Blue-500
+              'primary-hover': '#2563EB', // Blue-600
+              secondary: '#10B981', // Emerald-500
+              'secondary-hover': '#059669', // Emerald-600
+              dark: '#1F2937', // Gray-800
+              'deep-dark': '#0A192F', // Original Dark Navy
+              light: '#F9FAFB', // Gray-50
+              medium: '#6B7280', // Gray-500
+              'cta-blue': '#357ABD', // New CTA blue
+            },
+            'dark-bg-main': '#121212',
+            'dark-bg-card': '#1E1E1E',
+            'dark-bg-subtle': '#2A2A2A', 
+            'dark-text-high': 'rgba(224, 224, 224, 0.87)', // Approx #E0E0E0
+            'dark-text-medium': 'rgba(224, 224, 224, 0.60)',
+            'dark-text-low': 'rgba(224, 224, 224, 0.38)',
+            sky: { 
+              300: '#7DD3FC',
+              400: '#38BDF8',
+              500: '#0EA5E9',
+              600: '#0284C7'
+            },
+            amber: {
+              300: '#FCD34D',
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706'
+            },
+            emerald: {
+              300: '#6EE7B7',
+              400: '#34D399',
+              500: '#10B981',
+              600: '#059669'
+            },
+          },
+          animation: {
+            'subtle-bounce': 'subtle-bounce 2s infinite',
+          },
+          keyframes: {
+            'subtle-bounce': {
+              '0%, 100%': { transform: 'translateY(-5%)', animationTimingFunction: 'cubic-bezier(0.8,0,1,1)' },
+              '50%': { transform: 'translateY(0)', animationTimingFunction: 'cubic-bezier(0,0,0.2,1)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-dark-bg-main">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
